@@ -64,9 +64,9 @@ sigma convert -t lucene --without-pipeline ssh_failed_password.yml
 
 ## Screenshots
 
-![Wazuh dashboard showing the custom brute-force rule (100010) firing above the individual failed-login events](./screenshots/dashboard-alert.png)
+![Wazuh dashboard showing the custom brute-force rule (100010) firing above the individual failed-login events](./screenshots/dashboard_alert.png)
 
-*Add a screenshot here: the Threat Hunting events table showing rule 100010 ("SSH brute force attempt: 5+ failed logins...") firing at level 10, with the five underlying `sshd: authentication failed` (5760) events beneath it. Save it into a `screenshots/` folder in the repo and update the path above to match.*
+*The Threat Hunting events table showing rule 100010 ("SSH brute force attempt: 5+ failed logins...") firing at level 10, with the five underlying `sshd: authentication failed` (5760) events beneath it. Save it into a `screenshots/` folder in the repo and update the path above to match.*
 
 ## The false positive, in detail
 
