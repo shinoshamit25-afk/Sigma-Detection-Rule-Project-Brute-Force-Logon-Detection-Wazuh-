@@ -1,4 +1,4 @@
-# SSH Brute Force Detection — Sigma Rule + Wazuh
+# SSH Brute Force Detection — Sigma Rule + Wazuh (Self-Built Lab)
 
 ## What this project is
 
@@ -20,7 +20,7 @@ This project originally targeted Microsoft Sentinel, since that's the SIEM I've 
 - **`attacker` container** — Kali Linux, running Hydra against the target's SSH service
 - All three networked together via Docker, so the whole environment is fully self-contained and reproducible
 
-## Status: Complete — detection built, fired, and tuned ✅
+## Status: Complete — detection built, fired, and tuned 
 
 - [x] Docker Desktop installed and running (Mac, Apple Silicon)
 - [x] Wazuh single-node stack deployed via Docker Compose
@@ -61,6 +61,12 @@ Converted to a Lucene query with:
 ```
 sigma convert -t lucene --without-pipeline ssh_failed_password.yml
 ```
+
+## Screenshots
+
+![Wazuh dashboard showing the custom brute-force rule (100010) firing above the individual failed-login events](./screenshots/dashboard-alert.png)
+
+*Add a screenshot here: the Threat Hunting events table showing rule 100010 ("SSH brute force attempt: 5+ failed logins...") firing at level 10, with the five underlying `sshd: authentication failed` (5760) events beneath it. Save it into a `screenshots/` folder in the repo and update the path above to match.*
 
 ## The false positive, in detail
 
