@@ -116,7 +116,3 @@ Getting the Wazuh Docker stack stable took real debugging, not just following a 
 - Custom Wazuh XML rule (`local_rules.xml`) for stateful correlation logic
 - Kali Linux (Hydra) as the attacker, Ubuntu 22.04 as the target — both Docker containers
 - Docker Desktop on macOS (Apple Silicon, running amd64 images under emulation)
-
-## Author
-
-Shino Shamit — [github.com/shinoshamit25-afk](https://github.com/shinoshamit25-afk) · [shinoshamit.online](https://shinoshamit.online)
